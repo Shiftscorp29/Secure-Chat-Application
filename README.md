@@ -27,14 +27,19 @@ Create a database in MySQL (for example securechat).
 Run the following in MySQL to create the chat table:
 
 sql
+
 Copy
+
 Edit
+
 CREATE TABLE messages (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
     sender VARCHAR(50),
     receiver VARCHAR(50),
     message TEXT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    
 );
 Open the Java source files and update the database details:
 
