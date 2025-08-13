@@ -2,7 +2,9 @@ This is a simple secure chat application written in Java that stores messages in
 
 Features
 -> Send and receive chat messages locally
+
 -> AES encryption for secure message storage
+
 -> MySQL database backend for storing chat history
 
 Works on any OS with Java and MySQL installed
