@@ -26,11 +26,6 @@ Create a database in MySQL (for example securechat).
 
 Run the following in MySQL to create the chat table:
 
-sql
-
-Copy
-
-Edit
 
 CREATE TABLE messages (
 
@@ -38,17 +33,19 @@ CREATE TABLE messages (
     sender VARCHAR(50),
     receiver VARCHAR(50),
     message TEXT,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
     
 );
+
+
 Open the Java source files and update the database details:
 
-java
-Copy
-Edit
 String url = "jdbc:mysql://localhost:3306/securechat";
+
 String user = "root";
+
 String password = "root";
+
 Replace with your MySQL username, password, and database name.
 
 Compile the Java files with the MySQL connector in the classpath.
